@@ -25,7 +25,7 @@ int _putchar(char c);
 int print_char(va_list arg);
 int print_int(va_list arg);
 
-int int_to_binary(unsigned int n);
+int int_to_binary(va_list arg);
 void print_binary(unsigned int *binary,int size);
 
 int print_float(va_list arg);

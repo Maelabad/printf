@@ -23,7 +23,7 @@ int print_char(va_list arg)
  */
 int print_int(va_list arg)
 {
-	int num, i, count = 0, temp, div, j;
+	int num, i, count = 0, temp, div, j, s = 0;
 
 	num = va_arg(arg, int);
 	temp = num;
@@ -35,8 +35,9 @@ int print_int(va_list arg)
 
 	if (num < 0)
 	{
-		count++;
+		num = - num;
 		_putchar('-');
+		s = 1;
 	}
 
 	for (i = count - 1; i >= 0; i--)
@@ -47,7 +48,7 @@ int print_int(va_list arg)
 
 		_putchar((num / div) % 10 + '0');
 	}
-	return (count);
+	return (count + 1);
 }
 
 /**

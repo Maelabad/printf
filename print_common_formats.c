@@ -35,7 +35,7 @@ int print_int(va_list arg)
 
 	if (num < 0)
 	{
-		num = - num;
+		num = -num;
 		_putchar('-');
 		s = 1;
 	}

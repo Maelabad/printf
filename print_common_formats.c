@@ -10,7 +10,7 @@ int print_char(va_list arg)
 	char letter;
 
 	letter = (char) va_arg(arg, int);
-	_putchar(letter);
+	putchar(letter);
 	return (1);
 	/*printf("%c", letter);*/
 }
@@ -68,7 +68,7 @@ int print_string(va_list arg)
 	{
 		while (*str)
 		{
-			_putchar(*str);
+			putchar(*str);
 			str++;
 			i++;
 		}

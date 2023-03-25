@@ -48,7 +48,7 @@ int print_int(va_list arg)
 
 		_putchar((num / div) % 10 + '0');
 	}
-	return (count + 1);
+	return (count + s);
 }
 
 /**

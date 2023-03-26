@@ -36,7 +36,7 @@ int print_int(va_list arg)
 		_putchar('-');
 		s = 1;
 	}
-	print_format_int(num, count);
+	print_format_int((unsigned int) num, (unsigned int) count);
 	return (count + s);
 }
 

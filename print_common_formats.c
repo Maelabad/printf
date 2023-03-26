@@ -9,7 +9,7 @@ int print_char(va_list arg)
 	char letter;
 
 	letter = (char) va_arg(arg, int);
-	putchar(letter);
+	_putchar(letter);
 	return (1);
 }
 
@@ -52,9 +52,7 @@ int print_string(va_list arg)
 	char *str;
 
 	str = va_arg(arg, char *);
-	if (str != NULL)
-	{
-		return (print_format_string(str));
-	}
-	return (0);
+	if (str == NULL)
+		str = "(null)";
+	return (print_format_string(str));
 }

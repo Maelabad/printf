@@ -32,7 +32,8 @@ int _printf(const char * const format, ...)
 			}
 			else
 			{
-				_putchar(*(format + i));
+				_putchar(*(format + i + 1));
+				i++;
 				val++;
 			}
 		}

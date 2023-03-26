@@ -6,18 +6,18 @@
  */
 int print_r(va_list arg)
 {
-        char *str;
-        int i = 0, count = 0;
+	char *str;
+	int i = 0, count = 0;
 
-        str = va_arg(arg, char *);
-        if (str == NULL)
-                str = ")llun(";
-        while (str[i])
-                i++;	
-        for (i -= 1; i >= 0; i--)
-        {
-                _putchar(str[i]);
-                count++;
-        }
-        return (count);
+	str = va_arg(arg, char *);
+	if (str == NULL)
+		str = ")llun(";
+	while (str[i])
+		i++;
+	for (i -= 1; i >= 0; i--)
+	{
+		_putchar(str[i]);
+		count++;
+	}
+	return (count);
 }

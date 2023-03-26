@@ -45,8 +45,14 @@ int print_format_o(va_list arg);
 /*PRINT_HEXA.C*/
 int int_to_hexa_x(va_list arg);
 int int_to_hexa_X(va_list arg);
+int print_hexa(int dec, int x);
 
 
+/*PRINT_S.C*/
+int print_S(va_list arg);
+
+/*PRINT_R.C*/
+int print_r(va_list arg);
 
 
 int print_float(va_list arg);

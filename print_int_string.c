@@ -30,7 +30,7 @@ int print_format_string(char *str)
 
 	while (*str)
 	{
-		putchar(*str);
+		_putchar(*str);
 		str++;
 		i++;
 	}

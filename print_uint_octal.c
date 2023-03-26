@@ -7,8 +7,7 @@
  */
 int print_format_u(va_list arg)
 {
-	unsigned int u;
-	int count = 0, temp;
+	unsigned int u, temp, count = 0;
 
 	u = va_arg(arg, unsigned int);
 	temp = u;
@@ -29,9 +28,9 @@ int print_format_u(va_list arg)
  */
 int print_format_o(va_list arg)
 {
-	int o = 0, decimal, i, r, temp, count = 0;
+	unsigned int o = 0, decimal, i, r, temp, count = 0;
 
-	decimal = va_arg(arg, int);
+	decimal = va_arg(arg, unsigned int);
 	for (i = 1; decimal != 0; i *= 10)
 	{
 		r = decimal % 8;

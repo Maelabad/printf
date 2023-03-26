@@ -15,7 +15,7 @@ int print_hexa(int decimal, int x)
 		remainder = decimal % 16;
 		if (remainder < 10)
 			hexadecimal[i] = remainder + 48;
-		else 
+		else
 			hexadecimal[i] = remainder + x;
 		decimal /= 16;
 		i++;
@@ -28,7 +28,7 @@ int print_hexa(int decimal, int x)
 
 
 /**
- * int_to_hexa_X - Sent a number to a function whose 
+ * int_to_hexa_X - Sent a number to a function whose
  * convert in hexa and prints it.
  * @arg: A list of arguments pointing to
  *       the character to be printed.
@@ -39,12 +39,12 @@ int int_to_hexa_X(va_list arg)
 	int decimal;
 
 	decimal = va_arg(arg, int);
-	return (print_hexa(decimal,55));
+	return (print_hexa(decimal, 55));
 }
 
 
 /**
- * int_to_hexa_X - Sent a number to a function whose
+ * int_to_hexa_x - Sent a number to a function whose
  * convert in hexa and prints it.
  * @arg: A list of arguments pointing to
  *       the character to be printed.
@@ -56,5 +56,5 @@ int int_to_hexa_x(va_list arg)
 
 	decimal = va_arg(arg, int);
 
-	return (print_hexa(decimal,87));
+	return (print_hexa(decimal, 87));
 }

@@ -22,7 +22,7 @@ int print_hexa(unsigned int decimal, int x)
 	}
 	j = i;
 	for (j--; j >= 0; j--)
-	_putchar(hexadecimal[j]);
+		_putchar(hexadecimal[j]);
 	return (i);
 }
 

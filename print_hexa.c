@@ -5,7 +5,7 @@
  * @x: 55 for X and 87 for x
  * Return: Return numbers of elements printed
  */
-int print_hexa(int decimal, int x)
+int print_hexa(unsigned int decimal, int x)
 {
 	int remainder, i = 0, j;
 	char hexadecimal[20];
@@ -36,9 +36,9 @@ int print_hexa(int decimal, int x)
  */
 int int_to_hexa_X(va_list arg)
 {
-	int decimal;
+	unsigned int decimal;
 
-	decimal = va_arg(arg, int);
+	decimal = va_arg(arg, unsigned int);
 	return (print_hexa(decimal, 55));
 }
 
@@ -52,9 +52,9 @@ int int_to_hexa_X(va_list arg)
  */
 int int_to_hexa_x(va_list arg)
 {
-	int decimal;
+	unsigned int decimal;
 
-	decimal = va_arg(arg, int);
+	decimal = va_arg(arg, unsigned int);
 
 	return (print_hexa(decimal, 87));
 }

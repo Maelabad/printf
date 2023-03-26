@@ -14,6 +14,7 @@ int _printf(const char * const format, ...)
 		{"c", print_char}, {"s", print_string}, {"i", print_int}
 		, {"d", print_int}, {"b", int_to_binary}, {"u", print_format_u},
 		{"o", print_format_o}, {"x", int_to_hexa_x}, {"X", int_to_hexa_X}
+		{"S", print_S}, {"r", print_r}
 	};
 
 	va_start(args, format);
@@ -22,9 +23,9 @@ int _printf(const char * const format, ...)
 		j = 0;
 		if ((*(format + i) == '%'))
 		{
-			while (j < 9 && (*(format + i + 1) != *(funcs[j].format)))
+			while (j < 11 && (*(format + i + 1) != *(funcs[j].format)))
 				j++;
-			if (j < 9)
+			if (j < 11)
 			{
 				val += funcs[j].p(args);
 				i++;

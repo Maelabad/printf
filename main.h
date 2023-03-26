@@ -36,7 +36,7 @@ int print_format_string(char *str);
 
 /*PRINT_BINARY.C*/
 int int_to_binary(va_list arg);
-void print_binary(unsigned int *binary,int size);
+void print_binary(unsigned int *binary, int size);
 
 /*PRINT_UINT_OCTAL.C*/
 int print_format_u(va_list arg);

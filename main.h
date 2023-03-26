@@ -31,7 +31,7 @@ int print_string(va_list arg);
 
 
 /*PRINT_INT_STRING.C*/
-void print_format_int(int n, int count);
+void print_format_int(unsigned int n, unsigned int count);
 int print_format_string(char *str);
 
 /*PRINT_BINARY.C*/
@@ -45,7 +45,7 @@ int print_format_o(va_list arg);
 /*PRINT_HEXA.C*/
 int int_to_hexa_x(va_list arg);
 int int_to_hexa_X(va_list arg);
-int print_hexa(int dec, int x);
+int print_hexa(unsigned int dec, int x);
 
 
 /*PRINT_S.C*/

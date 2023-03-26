@@ -5,7 +5,7 @@
  * @count: the numbers of digits
  * Return: Nothing
  */
-void print_format_int(int n, int count)
+void print_format_int(unsigned int n, unsigned int count)
 {
 	int div, i, j;
 

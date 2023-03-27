@@ -87,9 +87,8 @@ int print_special_char(char c, int *spe, char suiv)
 			break;
 
 		case '#':
-			print_spe_2(suiv);
+			res = print_spe_2(suiv);
 			*spe = 1;
-			res = 2;
 			break;
 
 		default:

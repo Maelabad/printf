@@ -14,7 +14,7 @@ int _printf(const char * const format, ...)
 		{"c", print_char}, {"s", print_string}, {"i", print_int}
 		, {"d", print_int}, {"b", int_to_binary}, {"u", print_format_u},
 		{"o", print_format_o}, {"x", int_to_hexa_x}, {"X", int_to_hexa_X},
-		{"S", print_S}, {"r", print_r}
+		{"S", print_S}, {"r", print_r}, {"R", print_rot}
 	};
 
 	va_start(args, format);

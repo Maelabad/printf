@@ -45,5 +45,6 @@ int print_format_o(va_list arg)
 	for (j = i - 1; j >= 0; j--)
 		_putchar(octal[j]);
 
+	free(octal);
 	return (i);
 }

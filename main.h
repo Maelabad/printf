@@ -60,6 +60,8 @@ int print_special_char(char c, int *spe, char suiv);
 /*PRINT_ROT.C*/
 int print_rot(va_list arg);
 
+/*PRINT_P.C*/
+int print_p(va_list arg);
 
 int print_float(va_list arg);
 

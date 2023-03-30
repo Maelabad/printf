@@ -57,6 +57,9 @@ int print_r(va_list arg);
 /*PRINT_SPECIAL_CHAR.C*/
 int print_special_char(char c, int *spe, char suiv);
 
+/*PRINT_ROT.C*/
+int print_rot(va_list arg);
+
 
 int print_float(va_list arg);
 

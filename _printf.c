@@ -23,9 +23,9 @@ int _printf(const char * const format, ...)
 		j = 0;
 		if ((*(format + i) == '%') || spe == 1)
 		{
-			while (j < 11 && (*(format + i + 1) != *(funcs[j].format)))
+			while (j < 12 && (*(format + i + 1) != *(funcs[j].format)))
 				j++;
-			if (j < 11)
+			if (j < 12)
 			{
 				val += funcs[j].p(args);
 				spe = 0;
